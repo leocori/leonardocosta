@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Leonardo C. Costa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-l"></i>
+                    <div class="logo-text">Leonardo C. Costa</div>
+                </div>
+
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="hero-pic">
+                <img src="images/imagemfundo.png" alt="profile pic">
+            </div>
+            <div class="hero-text">
+                <h5>Olá! Sou o <span id="input">Videógrafo</span></h5>
+                <h1>Leonardo Costa</h1>
+                <p>
+        Apaixonado por contar histórias através da imagem. Com experiência em filmagem, edição, design de som e locução, transformo ideias em projetos visuais criativos e impactantes.
+
+
+                </p>
+
+                <div class="btn-group">
+                    <a href="docs/cv.pdf" class="btn">Download CV</a>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/leocosta132/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/leonardoccosta"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+  
+    </div>
+
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks li");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var typed = new Typed("#input", {
+        strings: ["Videógrafo", "Fotógrafo", "Editor", "Sound Designer"],
+        typeSpeed: 70,
+        backSpeed: 55,
+        loop: true
+      });
+    });
+  </script>
+
+<footer class="footer-fixo">
+    <p>&copy; 2025 Leonardo C. Costa. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+</body>
+</html>
