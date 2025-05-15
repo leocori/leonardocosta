@@ -39,28 +39,24 @@
 
         <div class="portfolio-grid">
 
-          <!-- Vídeo Local 1 -->
-          <div class="portfolio-item" onclick="openVideo('local', 'videos/teaserexpv4.mov')">
-            <img src="images/thumb1.png" alt="Teaser Bandida AEESCS">
-            <h3>Teaser Bandida AEESCS</h3>
+          <div class="portfolio-item" onclick="window.open('https://drive.google.com/file/d/16w-LcAyR8XFynEZXc5PNVgJqKUSOOscr/view?usp=sharing', '_blank')">
+          <img src="images/thumb1.png" alt="Link externo">
+          <h3>Teaser Bandida</h3>
           </div>
 
-          <!-- Vídeo Local 2 -->
-          <div class="portfolio-item" onclick="openVideo('local', 'videos/reel.upworkv3.mp4')">
-            <img src="images/thumb2.png" alt="Reel Freelancer">
-            <h3>Reel Freelancer</h3>
+          <div class="portfolio-item" onclick="window.open('https://drive.google.com/file/d/18xWAHd6z1A1GXnvlVdDrUafpqaPv_liU/view?usp=sharing', '_blank')">
+          <img src="images/thumb2.png" alt="Link externo">
+          <h3>Reel Freelancer</h3>
           </div>
 
-          <!-- Vídeo YouTube 1 -->
-          <div class="portfolio-item" onclick="openVideo('local', 'videos/.expaftermoviebandidav2.mov')">
-            <img src="images/thumb3.png" alt="aftermoviebandida">
-            <h3>Aftermovie Bandida</h3>
+          <div class="portfolio-item" onclick="window.open('https://drive.google.com/file/d/1r95Gnoui-jgT_cG6MGUPQ19FODYXm6Wu/view?usp=sharing', '_blank')">
+          <img src="images/thumb3.png" alt="Link externo">
+          <h3>Aftermovie Bandida</h3>
           </div>
 
-          <!-- Vídeo YouTube 2 -->
-          <div class="portfolio-item" onclick="openVideo('youtube', 'videos/promoae.mp4')">
-            <img src="images/thumb5.png" alt="YouTube 2">
-            <h3>Promo Video</h3>
+          <div class="portfolio-item" onclick="window.open('https://drive.google.com/file/d/1jtDa_hUhhxRsuh5Zd2YPvWI-QghIBQAG/view?usp=sharing', '_blank')">
+          <img src="images/thumb5.png" alt="Link externo">
+          <h3>Promo Video</h3>
           </div>
 
         </div>
@@ -97,7 +93,7 @@
 
         <div class="portfolio-grid">
 
-          <div class="portfolio-item" onclick="openAudio('audio/audio1.wav')">
+          <div class="portfolio-item" onclick="openAudio('audio/audio1.mp3')">
             <img style="scale: 10%;" src="images/icon.png" alt="Áudio 2">
           </div>
 
@@ -199,5 +195,10 @@
         })
 
     </script>
+    <script>
+  function openDriveLink(url) {
+    window.open(url, '_blank');
+  }
+</script>
 </body>
 </html>
