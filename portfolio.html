@@ -18,6 +18,11 @@
           <div class="logo-text">Leonardo C. Costa</div>
         </div>
         <nav>
+                          <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
           <ul class="navlinks">
             <li><a href="index.html">Início</a></li>
             <li><a href="portfolio.html" class="active">Portfólio</a></li>
@@ -182,5 +187,17 @@
       }
     };
   </script>
+
+      <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        const nav = document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+    </script>
 </body>
 </html>
